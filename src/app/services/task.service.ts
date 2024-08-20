@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Tarefa } from '../../../Tarefa';
 
@@ -19,4 +19,7 @@ export class TaskService {
     return this.httpClient.delete<Tarefa>(`${this.apiUrl}/${tarefa.id}`);
   }
 
+  updateTask(tarefa: Tarefa): Observable<Tarefa>{
+    return this.httpClient.put<Tarefa>(`${this.apiUrl}/${tarefa.id}`,tarefa);
+  }
 }
