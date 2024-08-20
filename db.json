@@ -1,29 +1,22 @@
 {
- "tasks":[
-  {
-    "id": "1",
-    "tarefa": "Estudar Angular",
-    "categoria": "Trabalho",
-    "concluido": false
-  },
-  {
-    "id": "2",
-    "tarefa": "Estudar Java",
-    "categoria": "Trabalho",
-    "concluido": false
-  },
-  {
-    "id": "3",
-    "tarefa": "Estudar MySql",
-    "categoria": "Curso",
-    "concluido": false
-  },
-  {
-    "id": "4",
-    "tarefa": "Desenvolver Api",
-    "categoria": "Trabalho",
-    "concluido": false
-  }
- ]
-
+  "tasks": [
+    {
+      "id": "2",
+      "tarefa": "Estudar Angular",
+      "categoria": "Trabalho",
+      "concluido": false
+    },
+    {
+      "id": "1",
+      "tarefa": "Estudar Java",
+      "categoria": "Trabalho",
+      "concluido": false
+    },
+    {
+      "id": "3",
+      "tarefa": "Desenvolver Api",
+      "categoria": "Estudo",
+      "concluido": false
+    }
+  ]
 }
