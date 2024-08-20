@@ -1,0 +1,4 @@
+@for (tarefa of tarefas; track tarefa.id) {
+  <app-task-item [tarefa]="tarefa" (onDeleteTask)="deleteTask($event)"></app-task-item>
+}
+
