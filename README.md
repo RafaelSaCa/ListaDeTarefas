@@ -1,6 +1,9 @@
 # ListaDeTarefas
+Projeto desenvolvido tendo como base a aula de Crislaine D'Paula, que pode ser acessado em:
+https://www.youtube.com/watch?v=61QSKu2u5GU
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+
 
 ## Development server
 
