@@ -5,18 +5,6 @@
       "tarefa": "Estudar Angular",
       "categoria": "Trabalho",
       "concluido": false
-    },
-    {
-      "id": "1",
-      "tarefa": "Estudar Java",
-      "categoria": "Trabalho",
-      "concluido": false
-    },
-    {
-      "id": "3",
-      "tarefa": "Desenvolver Api",
-      "categoria": "Estudo",
-      "concluido": false
     }
   ]
 }
