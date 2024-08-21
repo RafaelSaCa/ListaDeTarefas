@@ -1,18 +1,27 @@
-<form (ngSubmit)="onSubmit()">
-  <div>
-    <label for="text">Tarefa:</label>
-    <input type="text" name="text" class="form-control" placeholder="Adicionar tarefa" id="text" [(ngModel)]="tarefa">
-  </div>
-  <div class="mb-4">
-    <label for="categoria">Categoria:</label>
-    <select name="categoria" id="categoria" class="form-select"[(ngModel)]="categoria">
-      <option value="">Selecione a categoria</option>
-      <option value="trabalho">Trabalho</option>
-      <option value="estudo">Estudo</option>
-      <option value="lazer">Lazer</option>
-      <option value="contas">Contas</option>
-    </select>
-  </div>
+@if (mostrarAddTarefa) {
+ <app-button text="Fechar" color="red" (btnClick)="alteraVisualizacao(false)"></app-button>
+}@else{
+  <app-button text="Adicionar Tarefa" color="green" (btnClick)="alteraVisualizacao(true)"></app-button>
+}
 
-  <input type="submit" value="Salvar Tarefa" class="btn btn-block mb-4" >
-</form>
+@if(mostrarAddTarefa){
+  <form (ngSubmit)="onSubmit()" class="addForm">
+    <div>
+      <label for="text">Tarefa:</label>
+      <input type="text" name="text" class="form-control" placeholder="Adicionar tarefa" id="text" [(ngModel)]="tarefa">
+    </div>
+    <div class="mb-4">
+      <label for="categoria">Categoria:</label>
+      <select name="categoria" id="categoria" class="form-select"[(ngModel)]="categoria">
+        <option value="">Selecione a categoria</option>
+        <option value="trabalho">Trabalho</option>
+        <option value="estudo">Estudo</option>
+        <option value="lazer">Lazer</option>
+        <option value="contas">Contas</option>
+      </select>
+    </div>
+
+    <input type="submit" value="Salvar Tarefa" class="btn btn-block mb-4" >
+  </form>
+
+}
